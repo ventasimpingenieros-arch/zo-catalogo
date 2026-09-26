@@ -10,12 +10,14 @@ armar un pedido que se envía por WhatsApp al **924667782**.
 
 ## Contenido de esta carpeta
 
-| Archivo | Para qué sirve |
+| Archivo / carpeta | Para qué sirve |
 |---|---|
-| `index.html` | El catálogo completo. Es TODO lo que se necesita. |
-| `vercel.json` | Configuración para publicarlo en Vercel (opcional). |
+| `index.html` | El catálogo completo. Es la página principal. |
+| `img/` | Fotos de los productos (para la vista previa en el pedido de WhatsApp). |
+| `vercel.json` | Configuración para publicarlo en Vercel. |
 | `.gitignore` | Lista de archivos que Git debe ignorar. |
 | `README.md` | Este instructivo. |
+| `COMO-ACTUALIZAR-EL-CATALOGO.md` | Guía para mantener el catálogo al día. |
 
 ---
 
@@ -30,8 +32,9 @@ armar un pedido que se envía por WhatsApp al **924667782**.
    - NO marques "Add a README" (ya tienes uno).
 3. En la página del repositorio vacío, haz clic en **uploading an existing file**
    (subir un archivo existente).
-4. Arrastra los 4 archivos de esta carpeta (`index.html`, `README.md`,
-   `vercel.json`, `.gitignore`).
+4. Arrastra TODO el contenido de esta carpeta, **incluida la carpeta `img/`**
+   (`index.html`, la carpeta `img/`, `README.md`, `vercel.json`, `.gitignore`,
+   `COMO-ACTUALIZAR-EL-CATALOGO.md`).
 5. Haz clic en **Commit changes** (Guardar cambios).
 
 ### 2) Conectarlo a Vercel para obtener la dirección web
@@ -54,12 +57,11 @@ que apunta a ella. Al escanearlo, cualquier cliente abre el catálogo al instant
 
 ## Mostrar las fotos en el pedido de WhatsApp (opcional, más adelante)
 
-Actualmente el pedido llega SIEMPRE al número **924667782** con todos los datos
-en texto (cliente, empresa, RUC/DNI, productos y cantidades).
-
-Cuando el catálogo ya esté publicado (paso 2), se puede hacer que cada producto
-también muestre su foto en el chat de WhatsApp. Para eso hay que agregar a cada
-producto un enlace público de su imagen. Puedo ayudarte con eso cuando quieras.
+El pedido llega SIEMPRE al número **924 667 782** con todos los datos en texto
+(cliente, empresa, RUC/DNI, productos y cantidades). **Además ya viene incluido**
+un bloque "IMÁGENES DE REFERENCIA" con el enlace de la foto de cada producto
+pedido: al publicarlo en Vercel (paso 2), WhatsApp mostrará la vista previa de
+esas fotos automáticamente. Las imágenes se toman de la carpeta `img/`.
 
 ---
 
